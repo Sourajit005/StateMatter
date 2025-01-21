@@ -35,6 +35,11 @@ function changeState() {
         return;
     }
 
+    if (substances[index - 1] === MatterState.SOLID) {
+        showMessage("Substance is in Solid state and cannot be changed.");
+        return;
+    }
+
     const newState = prompt("Choose new state: 1. Liquid, 2. Solid, 3. Gaseous");
     switch (parseInt(newState)) {
         case 1:
@@ -75,6 +80,11 @@ function deleteSubstance() {
     const index = prompt(`Enter substance index to delete (1 to ${substances.length}):`);
     if (index < 1 || index > substances.length || isNaN(index)) {
         showMessage("Invalid index.");
+        return;
+    }
+
+    if (substances[index - 1] === MatterState.SOLID) {
+        showMessage("Substance is in Solid state and cannot be deleted.");
         return;
     }
 
