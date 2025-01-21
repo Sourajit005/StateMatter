@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substance Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Substance Manager</h1>
+        <div id="substance-list">
+            <h2>Current Substances</h2>
+            <ul id="substanceDisplay"></ul>
+        </div>
+
+        <div id="actions">
+            <h2>Actions</h2>
+            <button onclick="addSubstance()">Add New Substance</button>
+            <button onclick="changeState()">Change Substance State</button>
+            <button onclick="showStateCounts()">Display State Counts</button>
+            <button onclick="deleteSubstance()">Delete Substance</button>
+        </div>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
