@@ -15,7 +15,7 @@ function updateSubstanceDisplay() {
     }
 }
 
-// Add a new substance
+// Add the new substance
 function addSubstance() {
     substances.push(MatterState.GASEOUS);
     updateSubstanceDisplay();
